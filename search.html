@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Vehicles - AutoTrader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="branding-h1">
+            AutoTrader Elite
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Portal</a></li>
+                <li><a href="search.html">Explore</a></li>
+                <li><a href="register.html">Become Seller</a></li>
+                <li><a href="login.html">Access Account</a></li>
+                <li><a href="add-vehicle.html">Post Listing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-station">
+            <h2 class="section-title">Refine Your Selection</h2>
+            <form id="vehicleFilterForm" class="filter-box">
+                <div class="input-row">
+                    <label for="modelKeyword">Brand/Model:</label>
+                    <input type="text" id="modelKeyword" name="modelKeyword" placeholder="Search by model name...">
+                </div>
+                <div class="input-row">
+                    <label for="yearFilter">Release Year:</label>
+                    <input type="number" id="yearFilter" name="yearFilter" min="1900" max="2027" placeholder="Specific year...">
+                </div>
+                <button type="submit" class="action-trigger">Apply Filters</button>
+            </form>
+        </section>
+
+        <section class="inventory-section">
+            <h3 class="section-title">Available Inventory</h3>
+            <div id="resultsContainer" class="inventory-grid">
+                <p class="placeholder-msg">Exploring the database...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoTrader. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
